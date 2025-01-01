@@ -24,7 +24,7 @@ const char* password = "1234567890";
 
 
 // Server configuration
-const char* serverName = "https://techvoicehub.com/api/send-data";
+const char* serverName = "IP/api/send-data";
 const char* device_id = "NodeMCU001";
 
 
