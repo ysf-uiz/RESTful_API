@@ -5,21 +5,21 @@ import time
 import machine
 from machine import Pin
 from dht import DHT22
-from ntptime import settime  # For time synchronization
+from ntptime import settime  
 
 # WiFi credentials
 ssid = "wifi"
 password = "1234567890"
 
 # Server configuration
-serverName = "http://172.16.98.144:5000/api/send-data"
-device_id = "NodeMCU002"  # Change this for your ESP8266
+serverName = "http://IP:5000/api/send-data"
+device_id = "NodeMCU002"  
 
 # Pin Configuration
-dht_pin = Pin(2, Pin.IN)  # D5 on NodeMCU
+dht_pin = Pin(2, Pin.IN) 
 dht_sensor = DHT22(dht_pin)
-motion_pin = Pin(12, Pin.IN)  # D6 on NodeMCU
-led_pin = Pin(4, Pin.OUT)  # D4 on NodeMCU, built-in LED, active LOW
+motion_pin = Pin(12, Pin.IN) 
+led_pin = Pin(4, Pin.OUT)  
 
 # Initialize objects
 wlan = network.WLAN(network.STA_IF)
